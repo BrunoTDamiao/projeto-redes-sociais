@@ -21,17 +21,28 @@ div.phone {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+
     height: 800px;
 }
 
 img.icone {
+
     border-radius: 90%;
     width: 50px;
     padding: 10px;
 }
 
 img.phone1 {
-    max-width: 30vw;
+    position: absolute;
     height: 500px;
+}
+
+div.phone > iframe {
+    position: relative;
+    background-image: url('../imagens/tela-home.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+
 }
