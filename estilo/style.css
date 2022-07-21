@@ -17,17 +17,21 @@ div.icones {
     margin: 15px;
 }
 
-img {
+div.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 800px;
+}
+
+img.icone {
     border-radius: 90%;
     width: 50px;
     padding: 10px;
 }
 
-iframe {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 40vw;
-    height: 650px;
+img.phone1 {
+    max-width: 30vw;
+    height: 500px;
 }
