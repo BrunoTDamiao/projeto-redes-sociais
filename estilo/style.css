@@ -1,48 +1,61 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
 
 body {
-    background-image: url('../imagens/fundo-madeira.jpg');
-    background-repeat: no-repeat;
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
-div.icones {
-    
-    float: right;
-    width: 50px;
-    margin: 15px;
-}
-
-div.phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 800px;
-}
-
-img.icone {
-
-    border-radius: 90%;
-    width: 50px;
-    padding: 10px;
-}
-
-img.phone1 {
-    position: absolute;
-    height: 500px;
-}
-
-div.phone > iframe {
+main {
     position: relative;
-    background-image: url('../imagens/tela-home.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 380px;
+    height: 100vh;
+}
 
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background:  url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid #ffffff5d;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    transition: transform .3s, border 0.4s;
 }
